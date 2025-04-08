@@ -1139,10 +1139,3 @@ div.gallery .cat-item {
     height: 150px;
   }
 }
-
-
-.footer *,
-.footer *::before,
-.footer *::after {
-  outline: 1px solid red;
-}
