@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skillvi Login</title>
+    <!-- 
+    - google font links
+    -->
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap"
+            rel="stylesheet"
+        />
+
+    <!-- 
+    - css link
+    --> 
+        <link rel="stylesheet" href="login/login.css">
+
+</head>
+<body>
+    
+    <header class="header" data-header>
+        <div class="container">
+          <a href="index.html" class="logo">
+            <svg
+              class="logo-light"
+              width="130"
+              height="50"
+              viewBox="0 0 120 40"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <text
+                x="50%"
+                y="50%"
+                font-size="35"
+                fill="white"
+                font-family="Sifonn, sans-serif"
+                text-anchor="middle"
+                dominant-baseline="middle"
+                style="font-weight: bolder"
+              >
+                Skillvi
+              </text>
+            </svg>
+  
+            <svg
+              class="logo-dark"
+              width="130"
+              height="50"
+              viewBox="0 0 120 40"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <text
+                x="50%"
+                y="50%"
+                font-size="35"
+                fill="#3c3b3d"
+                font-family="Sifonn, sans-serif"
+                text-anchor="middle"
+                dominant-baseline="middle"
+                style="font-weight: bolder"
+              >
+                Skillvi
+              </text>
+            </svg>
+  
+          <nav class="navbar" data-navbar>
+            <ul class="navbar-list">
+              <li>
+                <a href="signup.html" class="navbar-link">Don't have an account?</a>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+    </header>
+  
+
+    <div class="form-box">
+        <div class="main">
+            <input type="checkbox" id="chk" aria-hidden="true" />
+            <div class="login">
+                <form>
+                    <label for="chk" aria-hidden="true">Login to Skillvi</label>
+
+                    <div class="input-wrapper">
+                        <div class="rest">
+                            <input
+                            type="email"
+                            name="email"
+                            placeholder="Email"
+                            required=""
+                            />
+                        </div>
+
+                        <div class="pswd rest">
+                            <input
+                            type="password"
+                            name="pswd"
+                            placeholder="Password"
+                            required=""
+                            />
+                            <ion-icon name="eye-off-outline" class="eyeicon"></ion-icon>
+                        </div>
+                    </div>
+
+                    <button>Log In</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 
+    - ionicon
+    -->
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+        </script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">
+        </script>
+    <!-- 
+    - custom js link
+    -->
+
+    <script src="login/login.js"></script>
+
+</body>
+</html>
