@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- To able to display wide set of chars-->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> Tells Internet Explorer to use the latest rendering engine available, ensuring better compatibility -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Makes the webpage responsive on different screen sizes by setting the viewport width equal to the device's width and using a 1.0 scale (default zoom).-->
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Skillvi | Algeria's First Freelancing Platform</title>
+    <meta
+      name="description"
+      content="Boost your freelance career in Algeria! Skill Bridge helps young talents find remote jobs and freelance gigs that match their skills. Work on your terms!"
+    />
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image" />
+    <!--Specifies the favicon (the small icon in the browser tab).-->
+
+    <!-- 
+    - google font links
+  -->
+ <link rel="preconnect" href="https://fonts.googleapis.com/" />
+ <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+ <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+ <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet"/>
+
+    <!-- 
+    - css link
+  -->
+    <link rel="stylesheet" href="assets/style.css" />
+
+    <!-- 
+    - preload images
+  -->
+    <!-- <link rel="preload" as="image" href="./assets/images/hero-bg.jpg" /> -->
+  </head>
+
+  <body>
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <svg
+            class="logo-light"
+            width="130"
+            height="50"
+            viewBox="0 0 120 40"
+            xmlns="http://www.w3.org/2000/svg"
+            style="z-index: 5;"
+
+          >
+            <text
+              x="41%"
+              y="50%"
+              font-size="35"
+              fill="white"
+              font-family="Sifonn, sans-serif"
+              text-anchor="middle"
+              dominant-baseline="middle"
+              style="font-weight: bolder"
+            >
+              Skillvi
+            </text>
+          </svg>
+          <!-- <img src="./assets/images/skillvi-dark5.svg" width="80" height="30" alt="home" class="logo-dark"> -->
+          <svg
+            class="logo-dark"
+            width="130"
+            height="50"
+            viewBox="0 0 120 40"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <text
+              x="41%"
+              y="50%"
+              font-size="35"
+              fill="#3c3b3d"
+              font-family="Sifonn, sans-serif"
+              text-anchor="middle"
+              dominant-baseline="middle"
+              style="font-weight: bolder"
+            >
+              Skillvi
+            </text>
+          </svg>
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="#" class="logo ">
+              <svg
+              
+              class="logo-light"
+              width="130"
+              height="50"
+              viewBox="0 0 120 40"
+              xmlns="http://www.w3.org/2000/svg"
+              >
+              <text
+                x="41%"
+                y="50%"
+                font-size="35"
+                fill="white"
+                font-family="Sifonn, sans-serif"
+                text-anchor="middle"
+                dominant-baseline="middle"
+                style="font-weight: bolder"
+              >
+                Skillvi
+              </text>
+            </svg>
+            </a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="#" class="navbar-link">Find skill</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">Find work</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">About us</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">Blog</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">Pricing</a>
+            </li>
+          </ul>
+
+          <div class="wrapper">
+            <a href="mailto:info@email.com" class="contact-link"
+              >info.skillvi@gmail.com</a
+            >
+
+            <a href="tel:001234567890" class="contact-link"
+              >00 (123) 456 78 90</a
+            >
+          </div>
+          <!--in sidebar for mobile-->
+
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+          </ul>
+          <!--in sidebar for mobile-->
+        </nav>
+
+        <a href="signup.html" class="btn btn-primary">Join us</a>
+
+        <!-- <button>
+        <ion-icon name="moon-outline" aria-hidden="true" class="dark-icon"></ion-icon>
+      </button>
+      <button>
+        <ion-icon name="sunny-outline" aria-hidden="true" class="light-icon"></ion-icon>
+      </button> -->
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+        <!--for mobile sidebar overlay click-->
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section
+          class="section hero has-bg-image"
+          aria-label="home"
+          style="background-image: url(assets/images/hero-bg.jpg)"
+        >
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="h1 hero-title">
+                Connecting Algeria’s Brightest Freelancers with Those Who Need
+                Them.
+              </h1>
+
+              <p class="hero-text">
+                Skillvi is where skilled Algerian freelancers and businesses
+                come together. Whether you're hiring or looking for work, we
+                make the connection seamless and secure.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #ABOUT
+      -->
+
+        <section class="about" aria-labelledby="about-label">
+          <div class="container">
+            <figure class="about-banner">
+              <img
+                src="assets/images/About us.JPG"
+                width="800"
+                height="580"
+                loading="lazy"
+                alt="about banner"
+                class="w-100"
+              />
+            </figure>
+
+            <div class="about-content">
+              <p class="section-subtitle" id="about-label">Why Choose Us?</p>
+
+              <h2 class="h2 section-title">
+                Why Look for Work or Talent Alone When We Can Connect You?
+              </h2>
+
+              <ul>
+                <li class="about-item">
+                  <div class="accordion-card expanded" data-accordion>
+                    <h3 class="card-title">
+                      <button class="accordion-btn" data-accordion-btn>
+                        <ion-icon
+                          name="chevron-down-outline"
+                          aria-hidden="true"
+                          class="down"
+                        ></ion-icon>
+
+                        <spna class="span h5">Join for Free</spna>
+                      </button>
+                    </h3>
+
+                    <p class="accordion-content">
+                      Getting started is easy and 100% free—no hidden fees, no
+                      subscriptions. Sign up, explore opportunities, and connect
+                      with top Algerian talent without paying a dime untill you
+                      hire.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="about-item">
+                  <div class="accordion-card" data-accordion>
+                    <h3 class="card-title">
+                      <button class="accordion-btn" data-accordion-btn>
+                        <ion-icon
+                          name="chevron-down-outline"
+                          aria-hidden="true"
+                          class="down"
+                        ></ion-icon>
+
+                        <spna class="span h5">Verified Professionals</spna>
+                      </button>
+                    </h3>
+
+                    <p class="accordion-content">
+                      Quality matters! We ensure freelancers are skilled and
+                      reliable through reviews, ratings, and portfolio
+                      showcases—so you hire with confidence.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="about-item">
+                  <div class="accordion-card" data-accordion>
+                    <h3 class="card-title">
+                      <button class="accordion-btn" data-accordion-btn>
+                        <ion-icon
+                          name="chevron-down-outline"
+                          aria-hidden="true"
+                          class="down"
+                        ></ion-icon>
+
+                        <spna class="span h5">Secure & Protected</spna>
+                      </button>
+                    </h3>
+
+                    <p class="accordion-content">
+                      Your safety is our priority. From secure payments to
+                      protected transactions, we make sure both freelancers and
+                      clients have a worry-free experience.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #STATS
+      -->
+
+        <!-- <section class="stats" aria-label="our stats">
+        <div class="container">
+
+          <ul class="stats-card has-bg-image" style="background-image: url('./assets/images/stats-bg.jpg')">
+
+            <li>
+              <p class="card-text">
+                <span class="h1">7518</span>
+
+                <spna class="span">Completed Projects</spna>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">3472</span>
+
+                <spna class="span">Happy Customers</spna>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">2184</span>
+
+                <spna class="span">Expert Employees</spna>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">4523</span>
+
+                <spna class="span">Awards Won</spna>
+              </p>
+            </li>
+
+          </ul>
+
+        </div>
+      </section> -->
+
+        <!-- 
+        - #FEATURES
+      -->
+
+        <section class="section feature" aria-labelledby="feature-label">
+          <div class="container">
+            <figure class="feature-banner">
+              <img
+                src="assets/images/feature-banner3.png"
+                width="800"
+                height="531"
+                loading="lazy"
+                alt="feature banner"
+                class="w-100"
+              />
+            </figure>
+
+            <div class="feature-content">
+              <p class="section-subtitle" id="feature-label">
+                What can you do?
+              </p>
+
+              <h2 class="h2 section-title">What can you do as a freelancer?</h2>
+
+              <!-- <p class="section-text">
+              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio,
+              dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus.
+            </p> -->
+              <br />
+              <ul class="feature-list">
+                <li>
+                  <div class="feature-card">
+                    <div class="card-icon">
+                      <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">
+                      Aenean quam ornare. Curabitur blandit.
+                    </span>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="feature-card">
+                    <div class="card-icon">
+                      <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">
+                      Nullam quis risus eget urna mollis ornare.
+                    </span>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="feature-card">
+                    <div class="card-icon">
+                      <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">
+                      Etiam porta euismod malesuada mollis.
+                    </span>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="feature-card">
+                    <div class="card-icon">
+                      <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">
+                      Vivamus sagittis lacus vel augue rutrum.
+                    </span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="container container2">
+            <figure class="feature-banner">
+              <img
+                src="assets/images/feature2-banner3.png"
+                width="800"
+                height="531"
+                loading="lazy"
+                alt="feature banner"
+                class="w-100"
+              />
+            </figure>
+
+            <div class="feature-content">
+
+              <h2 class="h2 section-title">What can you do as a client?</h2>
+
+              <br />
+              <ul class="feature-list">
+                <li>
+                  <div class="feature-card">
+                    <div class="card-icon">
+                      <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">
+                      Aenean quam ornare. Curabitur blandit.
+                    </span>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="feature-card">
+                    <div class="card-icon">
+                      <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">
+                      Nullam quis risus eget urna mollis ornare.
+                    </span>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="feature-card">
+                    <div class="card-icon">
+                      <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">
+                      Etiam porta euismod malesuada mollis.
+                    </span>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="feature-card">
+                    <div class="card-icon">
+                      <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">
+                      Vivamus sagittis lacus vel augue rutrum.
+                    </span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- 
+           Category of services 
+      -->
+
+     <section class="section popular-services">
+      <!-- <div class="container"> -->
+
+	
+		    <h1 class="cat-section-head" >Most Popular Services</h1>
+
+	    <main class="cat-container">
+		
+	      	<!--  *****  Buttons Section Starts  *****  -->
+		      <div class="cat-button-group">
+			    <button class="cat-button cat-active" data-filter="*">All</button>
+            <button class="cat-button" data-filter=".design">Design</button>
+            <button class="cat-button" data-filter=".development">Development</button>
+            <button class="cat-button" data-filter=".marketing">Marketing</button>
+		      </div>
+		<!--  *****  Buttons Section Ends  *****  -->
+
+		<!--  *****  Gallery Section Starts  *****  -->
+     
+		      <div class="gallery">
+			
+			<!--  *****  Card 1 Starts  *****  -->
+			<div class="cat-item design">
+				<img src="assets/images/ui.png">
+				<div class="cat-overlay">
+					<a href="#">UI/UX Design</a>
+				</div>
+			</div>
+			<!--  *****  Card 1 Ends  *****  -->
+
+			<!--  *****  Card 2 Starts  *****  -->
+			<div class="cat-item design">
+				<img src="assets/images/graphic.jpeg">
+				<div class="cat-overlay">
+					<a href="#">Graphic Design</a>
+				</div>
+			</div>
+			<!--  *****  Card 2 Ends  *****  -->
+
+			<!--  *****  Card 3 Starts  *****  -->
+			<div class="cat-item development">
+				<img src="assets/images/app.jpeg">
+				<div class="cat-overlay">
+					<a href="#">App Development</a>
+				</div>
+			</div>
+			<!--  *****  Card 3 Ends  *****  -->
+
+			<!--  *****  Card 4 Starts  *****  -->
+			<div class="cat-item development">
+				<img src="assets/images/new webdev.jpeg">
+				<div class="cat-overlay">
+					<a href="#">Web Development</a>
+				</div>
+			</div>
+			<!--  *****  Card 4 Ends  *****  -->
+
+			<!--  *****  Card 5 Starts  *****  -->
+			<div class="cat-item development">
+				<img src="assets/images/game.png">
+				<div class="cat-overlay">
+					<a href="#">Game Development</a>
+				</div>
+			</div>
+			<!--  *****  Card 5 Ends  *****  -->
+
+			<!--  *****  Card 6 Starts  *****  -->
+			<div class="cat-item marketing">
+				<img src="assets/images/SEO.jpeg">
+				<div class="cat-overlay">
+					<a href="#">SEO Optimization</a>
+				</div>
+			</div>
+			<!--  *****  Card 6 Ends  *****  -->
+
+			<!-- Card 7 -->
+            <div class="cat-item marketing">
+               <img src="assets/images/brand.jpeg">
+               <div class="cat-overlay">
+               <a href="#">Branding Strategy</a>
+               </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="cat-item marketing">
+              <img src="assets/images/social media.jpeg">
+              <div class="cat-overlay">
+              <a href="#">Social Media Marketing</a>
+              </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="cat-item marketing">
+              <img src="assets/images/email.jpeg">
+             <div class="cat-overlay">
+              <a href="#">Email Marketing</a>
+             </div>
+            </div>
+
+
+			  <!-- Card 10 -->
+			<div class="cat-item marketing">
+			   <img src="assets/images/affiliate.jpeg">
+			   <div class="cat-overlay">
+				<a href="#">Affiliate Marketing</a>
+			   </div>
+			</div>
+  
+		</div>
+ 
+		<!--  *****  Gallery Section Ends  *****  -->
+      </main>
+      
+    <!-- </div> -->
+     </section>
+
+
+
+       </section>
+
+
+
+
+
+
+        <!-- 
+        - #CTA
+      -->
+
+        <section class="cta" aria-label="call to action">
+          <div class="container">
+            <h2 class="h2 section-title">
+              Join Skillvi Now & Unlock Endless Opportunities!
+            </h2>
+
+            <a href="signup.html" class="btn btn-primary">Join now</a>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container grid-list">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <svg
+            class="logo-light"
+            width="130"
+            height="50"
+            viewBox="0 0 120 40"
+            xmlns="http://www.w3.org/2000/svg"
+            
+          >
+            <text
+              x="41%"
+              y="50%"
+              font-size="35"
+              fill="white"
+              font-family="Sifonn, sans-serif"
+              text-anchor="middle"
+              dominant-baseline="middle"
+              style="font-weight: bolder"
+            >
+              Skillvi
+            </text>
+          </svg>
+          </a>
+
+          <p class="footer-text">
+            &copy; 2025 Skillvi team. <br />
+            All rights reserved.
+          </p>
+
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="footer-list">
+          <li>
+            <p class="h4 footer-list-title">Get in Touch</p>
+          </li>
+
+          <li>
+            <address class="footer-text">
+              Location, Boumerdes, Boumerdes city, Algeria.
+            </address>
+          </li>
+
+          <li>
+            <a href="mailto:info@email.com" class="footer-link"
+              >info.skillvi@gmail.com</a
+            >
+          </li>
+
+          <li>
+            <a href="tel:001234567890" class="footer-link">+213 542921011</a>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <p class="h4 footer-list-title">Learn More</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Our Story</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Projects</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms of Use</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </li>
+        </ul>
+
+        <div class="footer-list">
+          <p class="h4 footer-list-title">Our Newsletter</p>
+
+          <p class="footer-text">
+            Subscribe to our newsletter to get our news & deals delivered to
+            you.
+          </p>
+
+          <form action="" class="input-wrapper">
+            <input
+              type="email"
+              name="email_address"
+              placeholder="Email Address"
+              required
+              class="input-field"
+            />
+
+            <button type="submit" class="submit-btn">Join</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="assets/script.js"></script>
+
+
+    <!--   *****   JQuery Link   *****   -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+<!--   *****   Isotope Filter Link   *****  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+
+
+<script type="text/javascript">
+	var $galleryContainer = $('.gallery').isotope({
+		itemSelector: '.cat-item',
+  		layoutMode: 'fitRows'
+	})
+
+	$('.cat-button-group .cat-button').on('click', function(){
+		$('.cat-button-group .cat-button').removeClass('cat-active');
+		$(this).addClass('cat-active');
+
+		var value = $(this).attr('data-filter');
+		$galleryContainer.isotope({
+			filter: value 
+		})
+	})
+</script>
+
+
+
+
+
+    <!-- 
+    - ionicon
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
